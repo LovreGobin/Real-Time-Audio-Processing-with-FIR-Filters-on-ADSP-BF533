@@ -1,6 +1,6 @@
 # **VisualDSP++ Real-Time Audio Processing**<br>
-Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture
-Authors: Mateo Franjić, Lovre Gobin, Marko Grubišić
+Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture<br>
+Authors: Mateo Franjić, Lovre Gobin, Marko Grubišić<br>
 
 # **Overview**<br>
 This project implements real-time audio processing using FIR (Finite Impulse Response) filters on the ADSP-BF533 DSP processor, running on an EZ-KIT Lite development board. The system filters an incoming analog audio signal through an AD1836 codec, applying selectable low-pass and high-pass filters with configurable cutoff frequencies.
