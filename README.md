@@ -1,11 +1,11 @@
-**VisualDSP++ Real-Time Audio Processing**<br>
+# **VisualDSP++ Real-Time Audio Processing**<br>
 Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture
 Authors: Mateo Franjić, Lovre Gobin, Marko Grubišić
 
-**Overview**<br>
+# **Overview**<br>
 This project implements real-time audio processing using FIR (Finite Impulse Response) filters on the ADSP-BF533 DSP processor, running on an EZ-KIT Lite development board. The system filters an incoming analog audio signal through an AD1836 codec, applying selectable low-pass and high-pass filters with configurable cutoff frequencies.
 
-**Hardware**<br>
+# **Hardware**<br>
   DSP: Analog Devices ADSP-BF533 (Blackfin)
   Board: EZ-KIT Lite
   Codec: AD1836 (analog-to-digital and digital-to-analog conversion)
@@ -14,10 +14,10 @@ This project implements real-time audio processing using FIR (Finite Impulse Res
 
 <img width="1383" height="778" alt="image" src="https://github.com/user-attachments/assets/b4688dfd-909e-45a3-9bcb-e082dbd7ad72" /><br>
 
-**Tools & Software**<br>
+# **Tools & Software**<br>
 ToolPurposeVisualDSP++Main IDE for DSP programming and deploymentMATLAB Filter DesignerFIR coefficient generationWaveform GeneratorTest signal generation (sinusoidal)AudacityOutput signal analysis (time domain & frequency spectrum)
 
-**FIR Filter Design**<br>
+# **FIR Filter Design**<br>
 Coefficients were generated using MATLAB's Filter Designer extension:
   Filter type: FIR (low-pass and high-pass)
   Number of coefficients: 101
@@ -28,7 +28,7 @@ Coefficients were generated using MATLAB's Filter Designer extension:
 
 
 
-**Implementation**<br>
+# **Implementation**<br>
 
 **Initialization**<br>
 On startup, the system initializes the following peripherals and modules:
@@ -77,7 +77,7 @@ White noise (for frequency response measurement)
 
 
 
-**Results**<br>
+# **Results**<br>
 
 A 1500 Hz sinusoidal test signal was run through several filter configurations. 
 
@@ -93,5 +93,5 @@ Switching to a high-pass filter with a 4 kHz cutoff attenuated the signal notice
 
 Frequency response measurements confirmed expected filter behavior. The low-pass filter showed a clean characteristic, while the high-pass filter exhibited a slightly less ideal rolloff.
 
-**Conclusion**<br>
+# **Conclusion**<br>
 The project successfully demonstrates real-time FIR filtering on an embedded DSP platform. Both low-pass and high-pass filters perform as expected, with minor deviations attributable to the constraints of real-time processing on the ADSP-BF533.
